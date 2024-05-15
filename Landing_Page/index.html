@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Pgm</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            background-color: burlywood;
+            position: fixed;
+
+        }
+
+        .head {
+            list-style: none;
+        }
+
+
+        .head li {
+            display: inline;
+            margin-left: 20px;
+
+        }
+
+        .head li a {
+            text-decoration: none;
+            margin: 22px;
+            /* background-color: brown; */
+            font-size: 20px;
+
+        }
+
+        .searchbar {
+            margin-top: 15px;
+            margin-left: 450px;
+            margin-bottom: 4px;
+            padding-bottom: 10px;
+        }
+
+        .searchbar input {
+            border-radius: 5px;
+            width: 240px;
+            height: 28px;
+        }
+
+        .secondiv img {
+            height: 595px;
+            width: 100%;
+            margin-top: 62px;
+        }
+
+
+
+        #about-container h1 {
+            text-align: center;
+        }
+
+        .about-div {
+            display: flex;
+        }
+
+        .about-div img {
+            height: 230px;
+            width: 370px;
+            margin-left: 70px;
+            margin-right: 10px;
+            border-radius: 20px;
+        }
+
+        .about-div p {
+            font-size: large;
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+
+
+        #contact-container h1 {
+            text-align: center;
+        }
+
+        .contact-div {
+            display: flex;
+        }
+
+        .contact-div img {
+            height: 250px;
+            width: 380px;
+            margin-left: 75px;
+            margin-right: 10px;
+            border-radius: 20px;
+            margin-top: 40px;
+        }
+
+        .form-data {
+            display: flex;
+            flex-direction: column;
+            margin-left: 60px;
+        }
+
+        .form-data label {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .form-data input {
+            width: 700px;
+            height: 30px;
+        }
+
+        .button {
+            background-color: rgb(12, 181, 211);
+            width: 200px;
+            height: 35px;
+            margin-top: 20px;
+            border-radius: 8px;
+            padding: 7px;
+            font-size: 18px;
+        }
+
+
+        .footer-container {
+            background-color: burlywood;
+            height: 50px;
+            margin-top: 20px;
+        }
+
+        .footer-container p {
+            text-align: center;
+            padding: 16px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="head">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-container">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="#contact-container">Contact</a></li>
+                </ul>
+            </div>
+            <div class="searchbar">
+                <input type="text" placeholder="  search!">
+            </div>
+        </div>
+
+
+        <div class="secondiv">
+            <img src="https://www.digitaltrends.com/wp-content/uploads/2023/11/imac-m3-07.jpg?fit=1500%2C1000&p=1"
+                alt="" srcset="">
+        </div>
+
+
+        <div id="about-container">
+            <h1>About Us</h1>
+            <div class="about-div">
+                <div class="about">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuH9dwJ7z4xkhWtvZeoBZ_vCjGEjq8ZsMYSAqFHqpESA&s"
+                        alt="">
+                </div>
+                <div class="about">
+                    <p>I'm Sameer Raza pursuing B.Tech. CSE from Kanpur Institute of Technology, Kanpur affiliated with AKTU.
+                        Dedicated for enhancing knowledge and Experiences in the world of technology and coding.
+                        
+                        Proficient in Java programming, with a strong foundation in data structures and algorithms. Skilled in web development, creating responsive and user-friendly websites using HTML, C++, and Java. Continuously learning and exploring new technologies to stay up-to-date with industry trends..</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="contact-container">
+            <h1>Contact Us</h1>
+            <div class="contact-div">
+                <div class="contact-img">
+                    <img src="https://img.freepik.com/premium-photo/mix-office-supplies-gadgets-wooden-desk-with-text_93675-141818.jpg"
+                        alt="">
+                </div>
+                <div class="contact-data">
+                    <form action="" class="form-data">
+                        <label for="fname">Name:</label>
+                        <input type="text" placeholder=" Name" name="fname">
+
+                        <label for="femail">Email:</label>
+                        <input type="email" placeholder=" Email" name="femail">
+
+                        <label for="fmessage">Phone no:</label>
+                        <input type="number" placeholder=" Phone number" name="fmessage">
+
+                        <label for="fmessage">Description:</label>
+                        <textarea name="" id="" cols="30" rows="4" placeholder="Message"></textarea>
+                        <button class="button" type="button">Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer-container">
+            <p>Sameer &copy All Rights Reserved!</p>
+        </div>
+    </div>
+</body>
+
+</html>
